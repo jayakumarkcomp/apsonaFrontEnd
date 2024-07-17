@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Taking App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Note Taking App</h1>
+        <button id="login-btn">Login</button>
+        <button id="logout-btn" style="display: none;">Logout</button>
+    </header>
+    <main>
+        <section id="note-list">
+            <h2>Notes</h2>
+            <ul id="notes"></ul>
+        </section>
+        <section id="new-note">
+            <h2>Create New Note</h2>
+            <form>
+                <input type="text" id="note-title" placeholder="Title">
+                <textarea id="note-content" placeholder="Content"></textarea>
+                <button id="create-note-btn">Create Note</button>
+            </form>
+        </section>
+        <section id="search-notes">
+            <h2>Search Notes</h2>
+            <input type="search" id="search-input" placeholder="Search notes">
+        </section>
+        <section id="labels">
+            <h2>Labels</h2>
+            <ul id="labels-list"></ul>
+        </section>
+        <section id="archived-notes">
+            <h2>Archived Notes</h2>
+            <ul id="archived-notes-list"></ul>
+        </section>
+        <section id="trashed-notes">
+            <h2>Trashed Notes</h2>
+            <ul id="trashed-notes-list"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
